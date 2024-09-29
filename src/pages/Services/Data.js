@@ -3,12 +3,12 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Exclusive Access',
-    headline: 'Unlimited Transactions with zero fees',
+    headline: 'Unlimited Uploads and storage with zero fees',
     description:
-      'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+      'Get access to our exclusive Premium card that allows you to Upload unlimited Document without getting charged any fees',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: require('../../images/svg-1.svg'),
+    img: require('../../images/svg-2.svg'),
     alt: 'Credit Card'
   };
   

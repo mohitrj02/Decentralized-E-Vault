@@ -5,6 +5,8 @@ import { GiCrystalBars } from 'react-icons/gi';
 import { GiCutDiamond, GiRock } from 'react-icons/gi';
 import { GiFloatingCrystal } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
+// Pricing.js
+
 import {
   PricingSection,
   PricingWrapper,
@@ -17,13 +19,15 @@ import {
   PricingCardCost,
   PricingCardLength,
   PricingCardFeatures,
-  PricingCardFeature
+  PricingCardFeature,
+  backgroundImage
+ 
 } from './Pricing.elements';
 
  const Pricing = () => {
   return (
-    <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
-      <PricingSection>
+    <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }} >
+      <PricingSection backgroundImage={backgroundImage}>
         <PricingWrapper>
           <PricingHeading>Our Services</PricingHeading>
           <PricingContainer>
@@ -32,13 +36,13 @@ import {
                 <PricingCardIcon>
                   <GiRock />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
+                <PricingCardPlan>Basic</PricingCardPlan>
+                <PricingCardCost>299 INR</PricingCardCost>
                 <PricingCardLength>per month</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
+                  <PricingCardFeature>50 Uploads per day</PricingCardFeature>
+                  <PricingCardFeature>Basic Support</PricingCardFeature>
+                  <PricingCardFeature>Limited Storage</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
@@ -48,13 +52,13 @@ import {
                 <PricingCardIcon>
                   <GiCrystalBars />
                 </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
+                <PricingCardPlan>Standard</PricingCardPlan>
+                <PricingCardCost>599 INR</PricingCardCost>
                 <PricingCardLength>per month</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
+                  <PricingCardFeature>100 Uploads per day</PricingCardFeature>
+                  <PricingCardFeature>Standard Support</PricingCardFeature>
+                  <PricingCardFeature>Unlimited Storage</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
@@ -64,13 +68,14 @@ import {
                 <PricingCardIcon>
                   <GiCutDiamond />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
+                <PricingCardPlan>Premium</PricingCardPlan>
+                <PricingCardCost>999 INR</PricingCardCost>
                 <PricingCardLength>per month</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
+                  <PricingCardFeature>Unlimited Uploads</PricingCardFeature>
+                  <PricingCardFeature>24/7 Priority Support</PricingCardFeature>
+                  <PricingCardFeature>Full Customziation</PricingCardFeature>
+                  <PricingCardFeature>Unlimited Storage</PricingCardFeature>
                 </PricingCardFeatures>
                 <Button primary>Choose Plan</Button>
               </PricingCardInfo>
